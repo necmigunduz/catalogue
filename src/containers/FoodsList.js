@@ -4,7 +4,7 @@ import getData from '../assets/logic/FetchData';
 
 const FoodsList = () => {
   const parameters = {
-    apiKey: '24364ac435e44b1b828237a300173ae0',
+    apiKey: process.env.REACT_APP_API_KEY,
     number: 20,
   };
 
