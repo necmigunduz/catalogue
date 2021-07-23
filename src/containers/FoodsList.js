@@ -1,20 +1,11 @@
-import Food from '../components/Food';
-import Search from '../components/Search';
-import getData from '../assets/logic/FetchData';
+import Meal from '../components/Meal';
+import SearchBar from '../components/Search';
 
-const FoodsList = () => {
-  const parameters = {
-    apiKey: process.env.REACT_APP_API_KEY,
-    number: 20,
-  };
-
-  getData(parameters);
-  return (
-    <>
-      <Search />
-      <Food />
-    </>
-  );
-};
+const FoodsList = () => (
+  <>
+    <SearchBar />
+    <Meal />
+  </>
+);
 
 export default FoodsList;
