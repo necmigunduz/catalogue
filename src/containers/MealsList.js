@@ -63,14 +63,14 @@ const MealsList = (props) => {
 };
 
 MealsList.propTypes = {
+  fetchMeals: PropTypes.func.isRequired,
+  changeFilter: PropTypes.func.isRequired,
+  clearFilters: PropTypes.func.isRequired,
   meals: PropTypes.arrayOf(PropTypes.object).isRequired,
   filters: PropTypes.shape({
     q: PropTypes.string.isRequired,
     cuisineType: PropTypes.string.isRequired,
   }).isRequired,
-  fetchMeals: PropTypes.func.isRequired,
-  changeFilter: PropTypes.func.isRequired,
-  clearFilters: PropTypes.func.isRequired,
 };
 
 export default MealsList;

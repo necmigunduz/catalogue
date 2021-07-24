@@ -68,3 +68,5 @@ FoodsInfo.propTypes = {
   changeFilter: PropTypes.func.isRequired,
   clearFilter: PropTypes.func.isRequired,
 };
+
+export default FoodsInfo;
