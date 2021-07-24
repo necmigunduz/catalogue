@@ -6,7 +6,7 @@ import SearchField from '../components/Search';
 
 const MealsList = (props) => {
   const {
-    meals, filters, fetchMeals, changeFilter, clearFilters,
+    meals, filters, fetchMeals, changeFilter, clearFilter,
   } = props;
 
   const setMeals = async (ingredient, cuisine, from, to) => {
@@ -23,7 +23,7 @@ const MealsList = (props) => {
   };
 
   const handleClear = () => {
-    clearFilters();
+    clearFilter();
   };
 
   useEffect(() => {
@@ -65,7 +65,7 @@ const MealsList = (props) => {
 MealsList.propTypes = {
   fetchMeals: PropTypes.func.isRequired,
   changeFilter: PropTypes.func.isRequired,
-  clearFilters: PropTypes.func.isRequired,
+  clearFilter: PropTypes.func.isRequired,
   meals: PropTypes.arrayOf(PropTypes.object).isRequired,
   filters: PropTypes.shape({
     q: PropTypes.string.isRequired,

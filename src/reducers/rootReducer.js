@@ -5,9 +5,9 @@ import mealsReducer from './meals';
 
 const rootReducer = combineReducers(
   {
-    filterReducer,
-    mealReducer,
-    mealsReducer,
+    filters: filterReducer,
+    meal: mealReducer,
+    meals: mealsReducer,
   },
 );
 
