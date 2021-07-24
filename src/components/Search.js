@@ -9,7 +9,7 @@ import {
   mealValues,
 } from '../assets/logic/filters';
 
-const SearchBar = (props) => {
+const SearchField = (props) => {
   const {
     filters, link, filterHandler, submitHandler, clear,
   } = props;
@@ -39,7 +39,7 @@ const SearchBar = (props) => {
   const cuisineOptions = mapOptions(cuisineValues);
   const dishOptions = mapOptions(dishValues);
   const mealOptions = mapOptions(mealValues);
-  console.log(filters);
+
   return (
     <div>
       <div
@@ -65,10 +65,10 @@ const SearchBar = (props) => {
   );
 };
 
-SearchBar.propTypes = {
-  link: PropTypes.string.isRequired,
+SearchField.propTypes = {
+  link: PropTypes.string,
   filterHandler: PropTypes.func.isRequired,
-  submitHandler: PropTypes.func.isRequired,
+  submitHandler: PropTypes.func,
   clear: PropTypes.func.isRequired,
   filters: PropTypes.shape({
     q: PropTypes.string.isRequired,
@@ -81,4 +81,9 @@ SearchBar.propTypes = {
   }).isRequired,
 };
 
-export default SearchBar;
+SearchField.defaultProps = {
+  link: '#search',
+  submitHandler: () => {},
+};
+
+export default SearchField;

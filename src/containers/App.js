@@ -2,7 +2,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 // import PropTypes from 'prop-types';
 // import { connect } from 'react-redux';
 import '../assets/styles/App.css';
-import FoodsList from './FoodsList';
+import MealsList from './MealsList';
 import FoodsInfo from './FoodsInfo';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
           exact
           path="/"
           render={() => (
-            <FoodsList />
+            <MealsList />
           )}
         />
         <Route

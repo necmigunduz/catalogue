@@ -17,19 +17,19 @@ const getData = async (params, from, to) => {
     from,
     to,
   };
-  
+
   const url = serialize('https://api.edamam.com/search?', parameters);
   try {
     const response = await fetch(url)
       .then((r) => r.json());
-    const foodsArray = [];
+    const mealsArray = [];
     for (let i = 0; i < response.hits.length; i += 1) {
       const {
         label, image, ingredients, cuisineType, dishType, mealType, url,
       } = response.hits[i].recipe;
       const id = (response.hits[i].recipe.uri).split('_')[1];
       const cuisine = cuisineType ? cuisineType[0] : '';
-      foodsArray.push({
+      mealsArray.push({
         id,
         title: label,
         image,
@@ -42,7 +42,7 @@ const getData = async (params, from, to) => {
         url,
       });
     }
-    return foodsArray;
+    return mealsArray;
   } catch {
     return [];
   }
