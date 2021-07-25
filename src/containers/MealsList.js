@@ -44,7 +44,7 @@ const MealsList = (props) => {
       />
     ));
   } else {
-    listOfMeals = <p>You can search recipes by entering ingredients here!</p>;
+    listOfMeals = <p>No recipe found!</p>;
   }
 
   return (

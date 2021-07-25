@@ -92,5 +92,5 @@ const mealValues = ['Meal',
 ];
 
 export {
-  cuisineValues, dishValues, mealValues, dietValues, healthValues,
+  dietValues, healthValues, cuisineValues, dishValues, mealValues,
 };

@@ -6,7 +6,7 @@ const storage = (() => {
   const load = () => {
     if (!localStorage.filters) {
       return {
-        q: '', cuisineType: '', dishType: '', mealType: '',
+        q: '', dietLabels: '', healthLabels: '', cuisineType: '', dishType: '', mealType: '',
       };
     }
     const filters = JSON.parse(localStorage.filters);
