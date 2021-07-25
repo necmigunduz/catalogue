@@ -32,7 +32,6 @@ const FoodsInfo = (props) => {
     let count = 0;
     ingredientsToBeUsed = currentMeal.ingredients.map((e) => {
       count += 1;
-      console.log(e.text);
       return <p key={count}>{e.text}</p>;
     });
   }
