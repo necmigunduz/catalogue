@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav renders correctly 1`] = `
+<nav>
+  <h1>
+    <a
+      href="#Search"
+    >
+      WhatToEat
+    </a>
+  </h1>
+  <a
+    href="/"
+  >
+    Home
+  </a>
+</nav>
+`;

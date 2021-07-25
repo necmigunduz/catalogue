@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Meal Creates meal for mealList 1`] = `
+<div>
+  <a
+    href="/recipe/1"
+  >
+    mealA
+  </a>
+  <div>
+    <img
+      alt=""
+      className="image"
+      src="image"
+    />
+  </div>
+  <p>
+    Cuisine: cuisineA
+  </p>
+  <p />
+  <p />
+  <ul>
+    <li>
+      dishA
+    </li>
+  </ul>
+  <p>
+    Suggested for: mealA
+  </p>
+</div>
+`;
