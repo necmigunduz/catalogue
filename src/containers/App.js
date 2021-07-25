@@ -79,7 +79,7 @@ const mapDispatchToProps = (dispatch) => ({
   fetchMeals: (meals) => dispatch(fetchMeals(meals)),
   changeFilter: (filter, value) => dispatch(changeFilter(filter, value)),
   clearFilter: () => dispatch(clearFilter()),
-  changeMeal: (id) => dispatch(changeMeal(id)),
+  changeMeal: (meal) => dispatch(changeMeal(meal)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
