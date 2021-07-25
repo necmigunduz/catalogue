@@ -10,12 +10,12 @@ const Meal = (props) => {
   const cuisineInfo = cuisine || 'Universal';
 
   return (
-    <div className="menu">
-      <a className="title" href={`/recipe/${id}`}>{title}</a>
+    <div>
+      <a href={`/recipe/${id}`}>{title}</a>
       <div><img className="image" src={image} alt="" /></div>
       <p>{`Cuisine: ${cuisineInfo}`}</p>
-      <p>{health}</p>
       <p>{diet}</p>
+      <p>{health}</p>
       <ul>
         {dishList}
       </ul>

@@ -22,17 +22,18 @@ const FoodsInfo = (props) => {
   };
 
   useEffect(() => {
-    const parameters = { q: id };
-    setMeal(parameters, 0, 1);
-  });
+    const params = { q: id };
+    setMeal(params, 0, 1);
+  }, []);
 
   const currentMeal = meal || [];
   let ingredientsToBeUsed = '';
   if (currentMeal.ingredients) {
-    let c = 0;
+    let count = 0;
     ingredientsToBeUsed = currentMeal.ingredients.map((e) => {
-      c += 1;
-      return <p key={c}>{e.text}</p>;
+      count += 1;
+      console.log(e.text);
+      return <p key={count}>{e.text}</p>;
     });
   }
 

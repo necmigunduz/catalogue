@@ -2,11 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Option from './Options';
 import {
-  dietValues,
-  healthValues,
-  cuisineValues,
-  dishValues,
-  mealValues,
+  dietValues, healthValues, cuisineValues, dishValues, mealValues,
 } from '../assets/logic/filters';
 
 const SearchField = (props) => {
@@ -16,7 +12,7 @@ const SearchField = (props) => {
 
   const handleFilter = (e) => {
     const filter = e.target.id;
-    const defaults = ['diet', 'health', 'cuisince', 'dish', 'meal'];
+    const defaults = ['Diet', 'Health', 'Cuisine', 'Dish', 'Meal'];
     const value = defaults.includes(e.target.value) ? '' : e.target.value;
     filterHandler(filter, value);
   };
@@ -52,13 +48,13 @@ const SearchField = (props) => {
           value={filters.q}
         />
         <div>
-          <Option id="diet" options={dietOptions} value={filters.dietLabels} />
-          <Option id="health" options={healthOptions} value={filters.healthLabels} />
+          <Option id="dietLabels" options={dietOptions} value={filters.dietLabels} />
+          <Option id="healthLabels" options={healthOptions} value={filters.healthLabels} />
           <Option id="cuisineType" options={cuisineOptions} value={filters.cuisineType} />
           <Option id="dishType" options={dishOptions} value={filters.dishType} />
           <Option id="mealType" options={mealOptions} value={filters.mealType} />
         </div>
-        <a href={link} onClick={handleSubmit} type="button">Click to Search</a>
+        <a href={link} type="button" onClick={handleSubmit}>Click to Search</a>
         <button id="clear" type="button" onClick={handleClear}>Clear All</button>
       </div>
     </div>

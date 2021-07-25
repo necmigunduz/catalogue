@@ -5,7 +5,7 @@ const { CHANGE_MEAL } = actions;
 const mealReducer = (meal = [], action) => {
   switch (action.type) {
     case CHANGE_MEAL: {
-      return actions.meal;
+      return action.meal;
     }
     default: return meal;
   }

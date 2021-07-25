@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
@@ -39,11 +39,12 @@ function App(props) {
           )}
         />
         <Route
-          exact
           path="/recipe"
           render={() => (
             <FoodsInfo
               meal={meal}
+              filters={filters}
+              fetchMeals={fetchMeals}
               changeFilter={changeFilter}
               changeMeal={changeMeal}
               clearFilter={handleClear}
