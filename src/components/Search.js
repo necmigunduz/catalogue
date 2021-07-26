@@ -44,7 +44,7 @@ const SearchField = (props) => {
         <input
           id="q"
           type="text"
-          placeholder="Enter ingredients to search for a recipe including them"
+          placeholder="Enter ingredients and cooking equipment to search for a recipe including them"
           value={filters.q}
         />
         <div>

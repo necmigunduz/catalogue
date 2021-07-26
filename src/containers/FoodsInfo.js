@@ -51,7 +51,6 @@ const FoodsInfo = (props) => {
           <div>
             <div>
               {ingredientsToBeUsed}
-              {' '}
             </div>
             <a href={currentMeal.url} target="_blank" rel="none noreferrer">Link to Full Recipe</a>
           </div>

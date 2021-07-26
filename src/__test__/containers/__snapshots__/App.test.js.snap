@@ -9,7 +9,7 @@ Object {
         <div>
           <input
             id="q"
-            placeholder="Enter ingredients to search for a recipe including them"
+            placeholder="Enter ingredients and cooking equipment to search for a recipe including them"
             type="text"
             value=""
           />
@@ -325,7 +325,7 @@ Object {
       <div>
         <input
           id="q"
-          placeholder="Enter ingredients to search for a recipe including them"
+          placeholder="Enter ingredients and cooking equipment to search for a recipe including them"
           type="text"
           value=""
         />
