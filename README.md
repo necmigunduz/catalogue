@@ -1,60 +1,96 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+![screenshot](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Catalogue
 
-This project is based on the catalogue of dog clothes project of Microverse where the goal is to make a browsable list of items
-and a details page for each one of them. You can see all the specifications and requirements [here](https://www.notion.so/Catalogue-of-Dog-Clothes-8bf1512b8ab34fa28848beb8ab698a32)
+This project is produced for accomplishing a capstone at Microverse. [here](https://www.notion.so/Catalogue-of-Dog-Clothes-8bf1512b8ab34fa28848beb8ab698a32)
 
-This app is a catalog of foods and drinks where the user can search for his favorite meals and apply filters on his search.
-Every meal has a details page that the user can access by clicking on the title and see the ingredients of the meal and a link to the recipe.
-The data are being pulled from the Edamam Recipies API.
+This app allows users to enter ingredient(s) and cooking equipment into search field, and find the relevant recipients including them. This app uses EDAMAM recipe API. 
 
-![](./docs/Dailymeal.png)
+![](screenshot.png)
 
-## Built With
+## Live Demo
 
-- React.js
+[View Live](`https://catalogue-necm.herokuapp.com/`)
+
+## Built With 🛠
+- HTML
+- CSS
+- React
 - Redux
-- SCSS
-
-## [Live Version](https://daily-meal-patrick.herokuapp.com)
 
 ## Getting Started
 
-To get a local copy up and running
+> To get a local copy up and running follow these simple example steps.
 
-`git clone git@github.com:patrick-angelos/catalog.git`
-`cd catalog`
-`npm install`
-`npm run start` to start the server
+### Prerequisites
 
-create a `.env` file in the root directory of your project and add your REACT_APP_ID and REACT_APP_KEY values that you can receive from the EDAMAM reciepes API.
+- Good to have a text editor installed on your machine. You can use any default text editor that comes with the system
+  like Notepad but advanced text editors like Visual Studio Code, Atom or Sublime is recommended. It will help you to
+  interact with the source code.
 
-To run the tests
+### Setup
 
-`npm test`
+Refer the following documentations to download the Text Editor of your choice:
+
+[VS Code](https://code.visualstudio.com/)
+
+[Atom](https://atom.io/)
+
+[Sublime Text](https://www.sublimetext.com/)
+
+### Usage
+- Clone this Repository using following command
+
+<pre><code>git clone https://github.com/necmigunduz/catalogue.git</code></pre>
+
+- Navigate to the directory `bookstore-amit-necmi` in your File Explorer.
+
+- Run `git checkout milestone-5` to switch to the feature branch
+  
+- Run `npm install` to install dependencies.
+
+- Run `npm start` to run the app in browser. Recommended: Chrome/Firefox
+
+- Run `npm test` to test the app,
+
+- If you wish to play around the codes, navigate to this Repository in the Text Editor of your choice.
 
 ## Author
 
-👤 **Patrikis Angelos**
+👤 **Necmi Gunduz**
 
-- GitHub: [@patrick-angelos](https://github.com/patrick-angelos)
-- Twitter: [@AngelosPatrikis](https://twitter.com/AngelosPatrikis)
-- LinkedIn: [Angelos Patrikis](https://www.linkedin.com/in/angelos-patrikis-a590a61b5/)
+- LinkedIn: [Necmi Gunduz](https://www.linkedin.com/in/necmigunduz/)
+- Github: [@necmigunduz](https://github.com/necmigunduz/)
+- Twitter: [@necm_gun](https://twitter.com/necm_gun)
+- Mail: [necmigunduz@gmail.com](necmigunduz@gmail.com)
 
-## 🤝 Contributing
+### 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-## Show your support
+Feel free to check the [issues page](https://github.com/necmigunduz/catalogue/issues).
+
+### Show your support
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
+### License
 
-- To Microverse for their `README` template.
-- To EDAMAM reciepes for their API
+&copy; 2021 Necmi Gunduz
 
-## 📝 [License]
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-MIT License
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NON INFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE.
