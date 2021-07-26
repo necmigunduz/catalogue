@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MealsList renders properly 1`] = `
-<div>
+exports[`FoodsInfo renders properly 1`] = `
+Array [
   <div
     className="m-30"
   >
@@ -330,7 +330,7 @@ exports[`MealsList renders properly 1`] = `
       </div>
       <a
         className="m-30"
-        href="#search"
+        href="/"
         onClick={[Function]}
         type="button"
       >
@@ -344,20 +344,39 @@ exports[`MealsList renders properly 1`] = `
         Clear All
       </button>
     </div>
-  </div>
+  </div>,
   <div
-    className="listOfMeals"
+    className="m-center"
   >
-    <h3
-      className="fs-20 fw-400 bord-1 pad-20 bg-55 color-white"
+    <h1
+      className="m-left fs-40 fw-600"
+    />
+    <div
+      className="meal m-left"
     >
-      Search Results
-    </h3>
-    <p
-      className="m-30"
-    >
-      No recipe found!
-    </p>
-  </div>
-</div>
+      <div>
+        <img
+          alt="mealimage"
+        />
+        <div>
+          <div>
+            <h3
+              className="pad-20 fs-30 fw-900"
+            >
+              Ingredients
+            </h3>
+            
+          </div>
+          <a
+            className="link"
+            rel="none noreferrer"
+            target="_blank"
+          >
+            Link to: undefined
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
 `;

@@ -343,7 +343,9 @@ Object {
         <div
           class="listOfMeals"
         >
-          <h3>
+          <h3
+            class="fs-20 fw-400 bord-1 pad-20 bg-55 color-white"
+          >
             Search Results
           </h3>
           <p
@@ -694,7 +696,9 @@ Object {
       <div
         class="listOfMeals"
       >
-        <h3>
+        <h3
+          class="fs-20 fw-400 bord-1 pad-20 bg-55 color-white"
+        >
           Search Results
         </h3>
         <p
