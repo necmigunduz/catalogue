@@ -4,6 +4,8 @@ exports[`Meal Creates meal for mealList 1`] = `
 <div>
   <a
     href="/recipe/1"
+    rel="noreferrer"
+    target="_blank"
   >
     mealA
   </a>

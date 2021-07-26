@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Nav renders correctly 1`] = `
-<nav>
+<nav
+  className="bord-1 bg-5d"
+>
   <h1>
     <a
       href="#Search"

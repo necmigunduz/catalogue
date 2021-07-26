@@ -3,6 +3,10 @@ import PropTypes from 'prop-types';
 import getData from '../assets/logic/FetchData';
 import Meal from '../components/Meal';
 import SearchField from '../components/Search';
+import '../assets/styles/css-lib/borders.css';
+import '../assets/styles/css-lib/colors.css';
+import '../assets/styles/css-lib/positioning.css';
+import '../assets/styles/css-lib/fonts.css';
 
 const MealsList = (props) => {
   const {
@@ -37,6 +41,8 @@ const MealsList = (props) => {
         id={meal.id}
         title={meal.title}
         image={meal.image}
+        diet={meal.diet}
+        health={meal.health}
         cuisine={meal.cuisine}
         dish={meal.dishType}
         meal={meal.mealType}
@@ -44,19 +50,22 @@ const MealsList = (props) => {
       />
     ));
   } else {
-    listOfMeals = <p>No recipe found!</p>;
+    listOfMeals = <p className="m-30">No recipe found!</p>;
   }
 
   return (
     <>
-      <SearchField
-        filters={filters}
-        filterHandler={handleFilter}
-        submitHandler={handleSubmit}
-        clear={handleClear}
-      />
       <div>
-        {listOfMeals}
+        <SearchField
+          filters={filters}
+          filterHandler={handleFilter}
+          submitHandler={handleSubmit}
+          clear={handleClear}
+        />
+        <div className="listOfMeals">
+          <h3>Search Results</h3>
+          {listOfMeals}
+        </div>
       </div>
     </>
   );

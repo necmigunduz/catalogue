@@ -1,11 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../assets/styles/css-lib/borders.css';
+import '../assets/styles/css-lib/colors.css';
+import '../assets/styles/css-lib/positioning.css';
+import '../assets/styles/css-lib/fonts.css';
 
 const Option = (props) => {
   const { id, options, value } = props;
 
   return (
-    <div>
+    <div className="pad-10">
       <select id={id} value={value}>{options}</select>
       <div />
     </div>

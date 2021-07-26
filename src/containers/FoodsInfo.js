@@ -32,7 +32,7 @@ const FoodsInfo = (props) => {
     let count = 0;
     ingredientsToBeUsed = currentMeal.ingredients.map((e) => {
       count += 1;
-      return <p key={count}>{e.text}</p>;
+      return <p key={count} className="ingredients">{e.text}</p>;
     });
   }
 
@@ -44,15 +44,18 @@ const FoodsInfo = (props) => {
         filterHandler={changeFilter}
         clear={handleClear}
       />
-      <div>
-        <h2>{currentMeal.title}</h2>
-        <div>
-          <img alt="mealimage" src={currentMeal.image} />
+      <div className="m-center">
+        <h1 className="m-left fs-40 fw-600">{currentMeal.title}</h1>
+        <div className="meal m-left">
           <div>
+            <img alt="mealimage" src={currentMeal.image} />
             <div>
-              {ingredientsToBeUsed}
+              <div>
+                <h3 className="pad-20 fs-30 fw-900">Ingredients</h3>
+                {ingredientsToBeUsed}
+              </div>
+              <a href={currentMeal.url} target="_blank" rel="none noreferrer" className="link">{`Link to: ${currentMeal.title}`}</a>
             </div>
-            <a href={currentMeal.url} target="_blank" rel="none noreferrer">Link to Full Recipe</a>
           </div>
         </div>
       </div>

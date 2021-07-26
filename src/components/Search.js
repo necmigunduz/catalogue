@@ -4,6 +4,10 @@ import Option from './Options';
 import {
   dietValues, healthValues, cuisineValues, dishValues, mealValues,
 } from '../assets/logic/filters';
+import '../assets/styles/css-lib/borders.css';
+import '../assets/styles/css-lib/colors.css';
+import '../assets/styles/css-lib/positioning.css';
+import '../assets/styles/css-lib/fonts.css';
 
 const SearchField = (props) => {
   const {
@@ -37,7 +41,8 @@ const SearchField = (props) => {
   const mealOptions = mapOptions(mealValues);
 
   return (
-    <div>
+    <div className="m-30">
+      <h2 className="m-10 fw-900 fs-30">Search Your Recipe</h2>
       <div
         onChange={(e) => handleFilter(e)}
       >
@@ -46,15 +51,19 @@ const SearchField = (props) => {
           type="text"
           placeholder="Enter ingredients and cooking equipment to search for a recipe including them"
           value={filters.q}
+          className="size-20"
         />
-        <div>
+        <div className="m-20 fw-600">
+          <hr />
+          <h3>Choose your filters below</h3>
           <Option id="dietLabels" options={dietOptions} value={filters.dietLabels} />
           <Option id="healthLabels" options={healthOptions} value={filters.healthLabels} />
           <Option id="cuisineType" options={cuisineOptions} value={filters.cuisineType} />
           <Option id="dishType" options={dishOptions} value={filters.dishType} />
           <Option id="mealType" options={mealOptions} value={filters.mealType} />
+          <hr />
         </div>
-        <a href={link} type="button" onClick={handleSubmit}>Click to Search</a>
+        <a href={link} type="button" onClick={handleSubmit} className="m-30">Click to Search</a>
         <button id="clear" type="button" onClick={handleClear}>Clear All</button>
       </div>
     </div>

@@ -10,10 +10,9 @@ describe('serialize', () => {
         const url = serialize(base, extensions)
         expect(url).toBe('https://www.abc.net?a=valueA&b=valueB&')
     })
-    it('ignores empty extensions and empty q', () => {
+    it('ignores empty extensions', () => {
         const base = 'https://www.abc.net?'
         const extensions = {
-            q: '',
             a: '',
             c: 'valueC',
         }
