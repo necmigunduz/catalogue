@@ -7,7 +7,7 @@ This project is produced for accomplishing a capstone at Microverse. [here](http
 This app allows users to enter ingredient(s) and cooking equipment into search field, and find the relevant recipients including them. This app uses EDAMAM recipe API. 
 
 ## Screenshot
-![screenshot](screenshot.png)
+![screenshot]('https://github.com/necmigunduz/catalogue/blob/catalogue/screenshot%20.png')
 
 ## Live Demo
 
