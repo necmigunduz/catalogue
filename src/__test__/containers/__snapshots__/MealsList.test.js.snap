@@ -1,19 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MealsList renders properly 1`] = `
-Array [
-  <div>
+<div>
+  <div
+    className="m-30"
+  >
+    <h2
+      className="m-10 fw-900 fs-30"
+    >
+      Search Your Recipe
+    </h2>
     <div
       onChange={[Function]}
     >
       <input
+        className="size-20"
         id="q"
         placeholder="Enter ingredients and cooking equipment to search for a recipe including them"
         type="text"
         value=""
       />
-      <div>
-        <div>
+      <div
+        className="m-20 fw-600"
+      >
+        <hr />
+        <h3>
+          Choose your filters below
+        </h3>
+        <div
+          className="pad-10"
+        >
           <select
             id="dietLabels"
             value=""
@@ -42,7 +58,9 @@ Array [
           </select>
           <div />
         </div>
-        <div>
+        <div
+          className="pad-10"
+        >
           <select
             id="healthLabels"
             value=""
@@ -149,7 +167,9 @@ Array [
           </select>
           <div />
         </div>
-        <div>
+        <div
+          className="pad-10"
+        >
           <select
             id="cuisineType"
             value=""
@@ -214,7 +234,9 @@ Array [
           </select>
           <div />
         </div>
-        <div>
+        <div
+          className="pad-10"
+        >
           <select
             id="dishType"
             value=""
@@ -276,7 +298,9 @@ Array [
           </select>
           <div />
         </div>
-        <div>
+        <div
+          className="pad-10"
+        >
           <select
             id="mealType"
             value=""
@@ -302,8 +326,10 @@ Array [
           </select>
           <div />
         </div>
+        <hr />
       </div>
       <a
+        className="m-30"
         href="#search"
         onClick={[Function]}
         type="button"
@@ -318,11 +344,18 @@ Array [
         Clear All
       </button>
     </div>
-  </div>,
-  <div>
-    <p>
+  </div>
+  <div
+    className="listOfMeals"
+  >
+    <h3>
+      Search Results
+    </h3>
+    <p
+      className="m-30"
+    >
       No recipe found!
     </p>
-  </div>,
-]
+  </div>
+</div>
 `;

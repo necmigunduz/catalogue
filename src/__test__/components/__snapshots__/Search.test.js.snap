@@ -1,18 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Search renders correctly 1`] = `
-<div>
+<div
+  className="m-30"
+>
+  <h2
+    className="m-10 fw-900 fs-30"
+  >
+    Search Your Recipe
+  </h2>
   <div
     onChange={[Function]}
   >
     <input
+      className="size-20"
       id="q"
       placeholder="Enter ingredients and cooking equipment to search for a recipe including them"
       type="text"
       value=""
     />
-    <div>
-      <div>
+    <div
+      className="m-20 fw-600"
+    >
+      <hr />
+      <h3>
+        Choose your filters below
+      </h3>
+      <div
+        className="pad-10"
+      >
         <select
           id="dietLabels"
           value=""
@@ -41,7 +57,9 @@ exports[`Search renders correctly 1`] = `
         </select>
         <div />
       </div>
-      <div>
+      <div
+        className="pad-10"
+      >
         <select
           id="healthLabels"
           value=""
@@ -148,7 +166,9 @@ exports[`Search renders correctly 1`] = `
         </select>
         <div />
       </div>
-      <div>
+      <div
+        className="pad-10"
+      >
         <select
           id="cuisineType"
           value=""
@@ -213,7 +233,9 @@ exports[`Search renders correctly 1`] = `
         </select>
         <div />
       </div>
-      <div>
+      <div
+        className="pad-10"
+      >
         <select
           id="dishType"
           value=""
@@ -275,7 +297,9 @@ exports[`Search renders correctly 1`] = `
         </select>
         <div />
       </div>
-      <div>
+      <div
+        className="pad-10"
+      >
         <select
           id="mealType"
           value=""
@@ -301,8 +325,10 @@ exports[`Search renders correctly 1`] = `
         </select>
         <div />
       </div>
+      <hr />
     </div>
     <a
+      className="m-30"
       href="#search"
       onClick={[Function]}
       type="button"
