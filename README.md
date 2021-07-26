@@ -7,7 +7,7 @@ This project is produced for accomplishing a capstone at Microverse. [here](http
 This app allows users to enter ingredient(s) and cooking equipment into search field, and find the relevant recipients including them. This app uses EDAMAM recipe API. 
 
 ## Screenshot
-![](screenshot.png)
+![screenshot](screenshot.png)
 
 ## Live Demo
 
@@ -44,9 +44,9 @@ Refer the following documentations to download the Text Editor of your choice:
 
 <pre><code>git clone https://github.com/necmigunduz/catalogue.git</code></pre>
 
-- Navigate to the directory `bookstore-amit-necmi` in your File Explorer.
+- Navigate to the directory `catalogue` in your File Explorer.
 
-- Run `git checkout milestone-5` to switch to the feature branch
+- Run `git checkout catalogue` to switch to the feature branch
   
 - Run `npm install` to install dependencies.
 
