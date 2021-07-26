@@ -63,7 +63,7 @@ const MealsList = (props) => {
           clear={handleClear}
         />
         <div className="listOfMeals">
-          <h3>Search Results</h3>
+          <h3 className="fs-20 fw-400 bord-1 pad-20 bg-55 color-white">Search Results</h3>
           {listOfMeals}
         </div>
       </div>
