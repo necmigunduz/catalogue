@@ -50,8 +50,8 @@ const SearchField = (props) => {
           id="q"
           type="text"
           placeholder="Enter ingredients and cooking equipment to search for a recipe including them"
-          value={filters.q}
           className="size-20"
+          onChange={(e) => handleFilter(e)}
         />
         <div className="m-20 fw-600">
           <hr />

@@ -6,11 +6,11 @@ import '../assets/styles/css-lib/positioning.css';
 import '../assets/styles/css-lib/fonts.css';
 
 const Option = (props) => {
-  const { id, options, value } = props;
+  const { id, options } = props;
 
   return (
     <div className="pad-10">
-      <select id={id} value={value}>{options}</select>
+      <select id={id}>{options}</select>
       <div />
     </div>
   );
@@ -19,7 +19,6 @@ const Option = (props) => {
 Option.propTypes = {
   id: PropTypes.string.isRequired,
   options: PropTypes.arrayOf(PropTypes.element.isRequired).isRequired,
-  value: PropTypes.string.isRequired,
 };
 
 export default Option;
