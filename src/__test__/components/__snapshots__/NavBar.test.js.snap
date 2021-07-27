@@ -13,7 +13,7 @@ exports[`Nav renders correctly 1`] = `
   <span
     className="fs-40 courgette-cursive color-b1a pad-20"
   >
-    Cook with what you have in your fridge!
+    Cook with what you have in your kitchen!
   </span>
   <a
     className="color-white no-decor home rad fs-30 pad-20 m-top-20"
