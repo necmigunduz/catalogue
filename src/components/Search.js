@@ -77,18 +77,26 @@ SearchField.propTypes = {
   clear: PropTypes.func.isRequired,
   filters: PropTypes.shape({
     q: PropTypes.string.isRequired,
-    dietLabels: PropTypes.string.isRequired,
-    healthLabels: PropTypes.string.isRequired,
-    cuisineType: PropTypes.string.isRequired,
-    dishType: PropTypes.string.isRequired,
-    mealType: PropTypes.string.isRequired,
+    dietLabels: PropTypes.string,
+    healthLabels: PropTypes.string,
+    cuisineType: PropTypes.string,
+    dishType: PropTypes.string,
+    mealType: PropTypes.string,
 
-  }).isRequired,
+  }),
 };
 
 SearchField.defaultProps = {
   link: '#search',
   submitHandler: () => {},
+  filters: PropTypes.shape({
+    q: '',
+    dietLabels: '',
+    healthLabels: '',
+    cuisineType: '',
+    dishType: '',
+    mealType: '',
+  }),
 };
 
 export default SearchField;

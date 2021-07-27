@@ -77,9 +77,16 @@ MealsList.propTypes = {
   clearFilter: PropTypes.func.isRequired,
   meals: PropTypes.arrayOf(PropTypes.object).isRequired,
   filters: PropTypes.shape({
-    q: PropTypes.string.isRequired,
-    cuisineType: PropTypes.string.isRequired,
-  }).isRequired,
+    q: PropTypes.string,
+    cuisineType: PropTypes.string,
+  }),
+};
+
+MealsList.defaultProps = {
+  filters: PropTypes.shape({
+    q: '',
+    cuisineType: 'indian',
+  }),
 };
 
 export default MealsList;
