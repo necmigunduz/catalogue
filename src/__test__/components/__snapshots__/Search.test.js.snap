@@ -15,9 +15,9 @@ exports[`Search renders correctly 1`] = `
     <input
       className="size-20"
       id="q"
+      onChange={[Function]}
       placeholder="Enter ingredients and cooking equipment to search for a recipe including them"
       type="text"
-      value=""
     />
     <div
       className="m-20 fw-600"
@@ -31,7 +31,6 @@ exports[`Search renders correctly 1`] = `
       >
         <select
           id="dietLabels"
-          value=""
         >
           <option>
             Diet
@@ -62,7 +61,6 @@ exports[`Search renders correctly 1`] = `
       >
         <select
           id="healthLabels"
-          value=""
         >
           <option>
             Health
@@ -171,7 +169,6 @@ exports[`Search renders correctly 1`] = `
       >
         <select
           id="cuisineType"
-          value=""
         >
           <option>
             Cuisine
@@ -238,7 +235,6 @@ exports[`Search renders correctly 1`] = `
       >
         <select
           id="dishType"
-          value=""
         >
           <option>
             Dish
@@ -302,7 +298,6 @@ exports[`Search renders correctly 1`] = `
       >
         <select
           id="mealType"
-          value=""
         >
           <option>
             Meal

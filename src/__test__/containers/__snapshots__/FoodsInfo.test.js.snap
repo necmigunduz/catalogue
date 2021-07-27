@@ -16,9 +16,9 @@ Array [
       <input
         className="size-20"
         id="q"
+        onChange={[Function]}
         placeholder="Enter ingredients and cooking equipment to search for a recipe including them"
         type="text"
-        value=""
       />
       <div
         className="m-20 fw-600"
@@ -32,7 +32,6 @@ Array [
         >
           <select
             id="dietLabels"
-            value=""
           >
             <option>
               Diet
@@ -63,7 +62,6 @@ Array [
         >
           <select
             id="healthLabels"
-            value=""
           >
             <option>
               Health
@@ -172,7 +170,6 @@ Array [
         >
           <select
             id="cuisineType"
-            value=""
           >
             <option>
               Cuisine
@@ -239,7 +236,6 @@ Array [
         >
           <select
             id="dishType"
-            value=""
           >
             <option>
               Dish
@@ -303,7 +299,6 @@ Array [
         >
           <select
             id="mealType"
-            value=""
           >
             <option>
               Meal

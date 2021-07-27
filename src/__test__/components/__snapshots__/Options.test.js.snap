@@ -6,7 +6,6 @@ exports[`Option renders correctly 1`] = `
 >
   <select
     id="dishType"
-    value="4"
   >
     <option>
       1

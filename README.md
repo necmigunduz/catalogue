@@ -1,13 +1,15 @@
 ![screenshot](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Video Links
-Because Loom free account has five minutes limit, I have recorded three seperate videos. Please see them in the order given below:
+Because Loom free account has five minutes limit, I have recorded two seperate videos. Please see them in the order given below.
 
-[Video-I](https://www.loom.com/share/20f9cacfe11d43fcb53a5a9f66aabdfc?sharedAppSource=personal_library)
+[Video-I](https://www.loom.com/share/6f1b9fd174bb49d4b12b34dde96a6a28?sharedAppSource=personal_library)
 
-[Video-II](https://www.loom.com/share/b28c13a3d6ef4d808cbb60970c279cbf?sharedAppSource=personal_library)
+[Video-II](https://www.loom.com/share/c5af4a38964b4a79a6efdd4490198d16?sharedAppSource=personal_library)
 
-[Video-III](https://www.loom.com/share/4b6a69e50e6a404fbe992405f11d11bc?sharedAppSource=personal_library)
+# Live Demo
+
+[View Live](`https://catalogue-necm.herokuapp.com/`)
 
 # Catalogue
 
@@ -17,10 +19,6 @@ This app allows users to enter ingredient(s) and cooking equipment into search f
 
 ## Screenshot
 [Screenshot]('https://github.com/necmigunduz/catalogue/blob/catalogue/screenshot%20.png')
-
-## Live Demo
-
-[View Live](`https://catalogue-necm.herokuapp.com/`)
 
 ## Built With 🛠
 - HTML

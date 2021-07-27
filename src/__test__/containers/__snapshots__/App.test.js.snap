@@ -20,7 +20,6 @@ Object {
               id="q"
               placeholder="Enter ingredients and cooking equipment to search for a recipe including them"
               type="text"
-              value=""
             />
             <div
               class="m-20 fw-600"
@@ -373,7 +372,6 @@ Object {
             id="q"
             placeholder="Enter ingredients and cooking equipment to search for a recipe including them"
             type="text"
-            value=""
           />
           <div
             class="m-20 fw-600"
