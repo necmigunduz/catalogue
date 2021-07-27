@@ -7,9 +7,9 @@ Because Loom free account has five minutes limit, I have recorded two seperate v
 
 [Video-II](https://www.loom.com/share/c5af4a38964b4a79a6efdd4490198d16?sharedAppSource=personal_library)
 
-# Live Demo
+# Heroku Deployment Link
 
-[View Live](`https://catalogue-necm.herokuapp.com/`)
+`https://catalogue-necm.herokuapp.com/`
 
 # Catalogue
 
@@ -60,6 +60,9 @@ Refer the following documentations to download the Text Editor of your choice:
 - Run `npm start` to run the app in browser. Recommended: Chrome/Firefox
 
 - Run `npm test` to test the app,
+
+- The app does not work without api_id and api_key. Please kindly reach me to get them in an 
+  '.env' file.
 
 - If you wish to play around the codes, navigate to this Repository in the Text Editor of your choice.
 
