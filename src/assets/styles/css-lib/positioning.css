@@ -93,14 +93,13 @@
 }
 
 .title {
-  font-size: 30px;
+  font-size:28px;
   text-decoration: none;
   padding-bottom: 30px;
   margin-top: auto;
   font-weight: 900;
-  opacity: 95%;
   padding-left: 10px;
-  color: black;
+  color: white;
 }
 
 .image {
