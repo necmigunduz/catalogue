@@ -1,17 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import App from './containers/App';
+import NavBar from './components/NavBar';
+import rootReducer from './reducers/rootReducer';
+import storage from './assets/logic/localStorage';
+import './assets/styles/reset.css';
+import './assets/styles/css-lib/borders.css';
+
+const filters = storage.load();
+const state = {
+  meals: [],
+  meal: {},
+  filters,
+};
+
+const store = createStore(rootReducer, state);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <NavBar />
+      <App />
+    </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

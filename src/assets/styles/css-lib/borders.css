@@ -1,0 +1,11 @@
+.bord-1 {
+  border: 1px solid #aaa3c2;
+}
+
+.rad {
+  border-radius: 10px;
+}
+
+.bord-10 {
+  border: 10px solid white;
+}

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Option renders correctly 1`] = `
+<div
+  className="pad-10"
+>
+  <select
+    id="dishType"
+  >
+    <option>
+      1
+    </option>
+    <option>
+      2
+    </option>
+    <option>
+      3
+    </option>
+  </select>
+  <div />
+</div>
+`;

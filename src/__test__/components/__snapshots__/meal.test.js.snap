@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Meal Creates meal for mealList 1`] = `
+<div
+  className="meal"
+>
+  <div
+    className="flx jsc-between bord-1 pad-10 bg-73"
+  >
+    <div
+      className="flx column"
+    >
+      <a
+        className="courgette-font title"
+        href="/recipe/1"
+        rel="noreferrer"
+        target="_blank"
+      >
+        mealA
+      </a>
+      <small
+        className="ing color-white"
+      >
+        (Click on the title above to see more!)
+      </small>
+    </div>
+    <div>
+      <img
+        alt=""
+        className="image"
+        src="image"
+      />
+    </div>
+  </div>
+  <div
+    className="pad-10 bord-1 pad-30 foodinfo"
+  >
+    <h3
+      className="fw-600 fs-20"
+    >
+      Cuisine:
+    </h3>
+    <p
+      className="cuisine"
+    >
+      cuisineA
+    </p>
+    <h3
+      className="fw-600 fs-20"
+    >
+      Diet Information:
+    </h3>
+    <p
+      className="diet"
+    />
+    <h3
+      className="fw-600 fs-20"
+    >
+      Health Related Information:
+    </h3>
+    <p
+      className="health"
+    />
+    <h3
+      className="fw-600 fs-20"
+    >
+      Dish Type:
+    </h3>
+    <ul>
+      <li
+        className="dishlist"
+      >
+        dishA
+      </li>
+    </ul>
+    <h3
+      className="fw-600 fs-20"
+    >
+      Suggested for:
+    </h3>
+    <p
+      className="suggested"
+    >
+      mealA
+    </p>
+  </div>
+</div>
+`;
